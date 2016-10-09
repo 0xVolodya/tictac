@@ -1,0 +1,13 @@
+.tile{
+    width:30%;
+    height: 150px;
+    font-size: 60px;;
+    background: rebeccapurple;
+    border:3px solid black;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    line-height:150px;
+    color: white;
+
+}
