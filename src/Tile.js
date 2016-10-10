@@ -1,12 +1,11 @@
-import React from 'react';
-import './Tile.css';
+var  React =require('react');
+// import './Tile.css';
 
-
-export default class Tile extends React.Component {
+var Tile= React.createClass({
 
   titleClick(props) {
     props.updateBoard(props.loc, props.turn);
-  }
+  },
 
   render() {
     return (
@@ -16,4 +15,5 @@ export default class Tile extends React.Component {
       </div>
     )
   }
-}
+});
+module.exports =Tile;

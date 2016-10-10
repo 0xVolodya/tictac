@@ -1,6 +1,6 @@
-import React from 'react';
+var React =require('react');
 
-export default class ResetButton extends React.Component {
+var ResetButton =React.createClass({
   render() {
     return (
       <button onClick={this.props.reset}>
@@ -8,4 +8,6 @@ export default class ResetButton extends React.Component {
       </button>
     )
   }
-}
+});
+
+module.exports=ResetButton;

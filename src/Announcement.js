@@ -1,7 +1,8 @@
-import React from 'react';
-import './Announcement.css';
+var React =require('react');
 
-export default class Announcement extends React.Component{
+// import './Announcement.css';
+
+var Announcement =React.createClass({
   render(){
     return(
     <div className={this.props.winner ? 'visible':'hidden'}>
@@ -11,4 +12,6 @@ export default class Announcement extends React.Component{
     </div>
     )
   }
-}
+});
+
+module.exports =Announcement;
