@@ -14,11 +14,13 @@
     "node-jsx": "^0.13.3",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "react-router": "^2.8.1",
     "socket.io": "^1.5.0",
     "socket.io-client": "^1.5.0",
     "webpack": "^1.13.2"
   },
   "scripts": {
+    "postinstall": "webpack",
     "start": "node server_socket.js",
     "prestart": "webpack",
     "build": "react-scripts build",

@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.hidden{
+    display: none;
+}
+
+button{
+    display: block;
+    margin:0 auto;
+    margin-bottom: 20px;
+}
+
+
+.container{
+    width: 960px;;
+    margin:0 auto;
+}
+.menu{
+    text-align: center;
+    width: 90%;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.tile{
+    width:30%;
+    height: 150px;
+    font-size: 60px;;
+    background: rebeccapurple;
+    border:3px solid black;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    line-height:150px;
+    color: white;
+
+}
