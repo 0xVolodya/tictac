@@ -54,7 +54,7 @@ var App = React.createClass({
     joinRoom(){
         this.socket.emit('room',
             (this.state.route == '') ? (this.getRandomNumber()) : this.state.route);
-    },
+        },
     joinedRoom(room){
         this.setState({room: room})
     },
