@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05b28ffc-4366-45bd-a159-7312c23f495a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bundle.js" afterPath="$PROJECT_DIR$/public/bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server_socket.js" afterPath="$PROJECT_DIR$/server_socket.js" />
-    </list>
+    <list default="true" id="05b28ffc-4366-45bd-a159-7312c23f495a" name="Default" comment="" />
     <ignored path="tictac.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -28,8 +24,8 @@
       <file leaf-file-name="server_socket.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server_socket.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -343,7 +339,7 @@
       <workItem from="1476109287456" duration="500000" />
       <workItem from="1476120975590" duration="3769000" />
       <workItem from="1476142594847" duration="25876000" />
-      <workItem from="1476335486753" duration="4538000" />
+      <workItem from="1476335486753" duration="5286000" />
     </task>
     <task id="LOCAL-00001" summary="аменил import на equre при подключении файлов. Вебпак не хотел их проходить. Два польхователя могут зайти и играть друг с другом">
       <created>1476121136632</created>
@@ -356,7 +352,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75712000" />
+    <option name="totallyTimeSpent" value="76460000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="683" y="0" width="683" height="728" extended-state="0" />
@@ -792,8 +788,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server_socket.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

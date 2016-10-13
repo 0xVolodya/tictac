@@ -2,13 +2,14 @@ var express = require('express');
 var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
-app.set('port',(process.env.PORT || 3000));
+app.set('port',(process.env.PORT || 3000))
 
 app.use(express.static('./public'));
+var port = ;
 var rooms = {};
 
 app.get('/', function (req, res) {
-    res.sendFile(__dirname + heroku run printenv"/public/index.html");
+    res.sendFile(__dirname + "/public/index.html");
 });
 
 
