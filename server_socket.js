@@ -1,11 +1,21 @@
 var express = require('express');
 var app = express();
-var http = require('http').Server(app);
-var io = require('socket.io')(http);
-app.set('port',(process.env.PORT || 3000))
+app.set('port', (process.env.PORT || 3000));
 
+var server = app.listen(app.get('port'), function() {
+    console.log('Node app is running on port', app.get('port'));
+});
+
+var io = require('socket.io')(server);
 app.use(express.static('./public'));
-var port = ;
+
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    next();
+});
+
+// var port = ;
 var rooms = {};
 
 app.get('/', function (req, res) {
@@ -47,8 +57,8 @@ io.on('connection', function (socket) {
 
 });
 
-
-http.listen(port, function () {
-
-    console.log('listening on ]' + port);
-});
+//
+// http.listen(port, function () {
+//
+//     console.log('listening on ]' + port);
+// });

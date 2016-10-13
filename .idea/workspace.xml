@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05b28ffc-4366-45bd-a159-7312c23f495a" name="Default" comment="" />
+    <list default="true" id="05b28ffc-4366-45bd-a159-7312c23f495a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server_socket.js" afterPath="$PROJECT_DIR$/server_socket.js" />
+    </list>
     <ignored path="tictac.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -21,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server_socket.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server_socket.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server_socket.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="453">
+              <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -51,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="184" column="20" selection-start-line="184" selection-start-column="20" selection-end-line="184" selection-end-column="20" />
+            <state relative-caret-position="578">
+              <caret line="187" column="10" selection-start-line="187" selection-start-column="10" selection-end-line="187" selection-end-column="10" />
               <folding>
                 <marker date="1476219054846" expanded="true" signature="4:212" ph="..." />
               </folding>
@@ -339,7 +342,7 @@
       <workItem from="1476109287456" duration="500000" />
       <workItem from="1476120975590" duration="3769000" />
       <workItem from="1476142594847" duration="25876000" />
-      <workItem from="1476335486753" duration="5286000" />
+      <workItem from="1476335486753" duration="5754000" />
     </task>
     <task id="LOCAL-00001" summary="аменил import на equre при подключении файлов. Вебпак не хотел их проходить. Два польхователя могут зайти и играть друг с другом">
       <created>1476121136632</created>
@@ -352,7 +355,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76460000" />
+    <option name="totallyTimeSpent" value="76928000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="683" y="0" width="683" height="728" extended-state="0" />
@@ -768,16 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="184" column="20" selection-start-line="184" selection-start-column="20" selection-end-line="184" selection-end-column="20" />
-          <folding>
-            <marker date="1476219054846" expanded="true" signature="4:212" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
@@ -788,9 +781,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server_socket.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="453">
+          <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="187" column="10" selection-start-line="187" selection-start-column="10" selection-end-line="187" selection-end-column="10" />
+          <folding>
+            <marker date="1476219054846" expanded="true" signature="4:212" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
