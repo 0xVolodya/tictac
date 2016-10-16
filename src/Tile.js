@@ -4,7 +4,7 @@ var  React =require('react');
 var Tile= React.createClass({
 
   titleClick(props) {
-    props.updateBoard(props.loc, props.turn);
+    props.updateBoard(props.loc);
   },
 
   render() {

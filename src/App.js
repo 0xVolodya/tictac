@@ -1,3 +1,4 @@
+/* @flow */
 var React = require('react');
 // import './App.css';
 var Announcement = require('./Announcement');
@@ -13,6 +14,9 @@ import * as audio from './audio';
 var room = 'ab11';
 
 var App = React.createClass({
+
+    socket:{},
+
     getInitialState() {
         return {
             gameBoard: [
@@ -22,10 +26,10 @@ var App = React.createClass({
             ],
             turn: 'x',
             isYourTurn: true,
-            winner: null,
+            winner: "none",
             message: "none",
             isGameStarted: false,
-            room: null,
+            room: 0,
             route: window.location.hash.substr(2),
             isGameOver: false
         };
@@ -56,7 +60,7 @@ var App = React.createClass({
         this.socket.emit('room',
             (this.state.route == '') ? (this.getRandomNumber()) : this.state.route);
         },
-    joinedRoom(room){
+    joinedRoom(room:number){
         this.setState({room: room})
     },
 
@@ -67,21 +71,21 @@ var App = React.createClass({
         (window.location.hash == "") ? window.location.hash = "/" + this.state.room : true;
         this.setState({isGameStarted: true})
     },
-    showMsg(message){
+    showMsg(message: string){
         this.setState({message: message});
     },
 
-    updateState(data){
+    updateState(data: Object){
         this.setState(data);
     },
 
-    updateBoard(loc, player) {
+    updateBoard(loc:number) {
         let winner = false;
         if (!this.state.isYourTurn) {
             return;
         }
         if (this.state.gameBoard[loc] === 'x' || this.state.gameBoard[loc] === 'o'
-            || this.state.winner) {
+            || this.state.winner!="none") {
             return;
         }
         let currentGameBoard = this.state.gameBoard;
@@ -137,7 +141,7 @@ var App = React.createClass({
             isYourTurn: false,
             turn: (this.state.turn === 'x') ? 'o' : 'x',
             isGameOver: winner,
-            winner:winner?this.state.turn:null
+            winner:winner?this.state.turn:"none"
         });
 
         // send by socket to enemy
@@ -160,7 +164,7 @@ var App = React.createClass({
                 ' ', ' ', ' '
             ],
             turn: 'x',
-            winner: null
+            winner: "none"
         })
     },
 
@@ -184,7 +188,6 @@ var App = React.createClass({
                                     loc={index}
                                     value={value}
                                     updateBoard={this.updateBoard}
-                                    turn={this.state.turn}
                                 />
                             )
                         }.bind(this))
